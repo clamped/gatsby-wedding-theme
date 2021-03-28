@@ -7,6 +7,7 @@ import Cover from "../components/Cover";
 import Map from "../components/Map";
 import CountdownSection from "../components/CountdownSection";
 import Profile from "../components/Profile";
+import Rsvp from "../components/Rsvp";
 
 const Landing = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const Landing = () => {
         <Cover />
         <Profile />
         <CountdownSection />
+        <Rsvp />
         <Map />
       </Layout>
     </Fragment>

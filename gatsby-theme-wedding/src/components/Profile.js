@@ -44,10 +44,6 @@ const QUERY = graphql`
       profiles {
         description
         name
-        links {
-          facebook
-          instagram
-        }
       }
     }
   }

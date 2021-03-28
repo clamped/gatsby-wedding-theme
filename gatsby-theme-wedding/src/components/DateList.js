@@ -9,6 +9,8 @@ import {
 import AddToCalendar from "./AddToCalendar";
 import { graphql, useStaticQuery } from "gatsby";
 
+import * as moment from "moment";
+
 const Container = styled.div`
   margin-bottom: 5rem;
 
@@ -54,7 +56,6 @@ const QUERY = graphql`
         }
         calendar {
           google
-          outlook
         }
       }
     }
@@ -71,14 +72,14 @@ function DateList() {
         <Container key={event.title}>
           <SectionTitle>
             <StyledIcon icon={faCalendar} color="red" />
-            <span> {event.title}</span>
+            <span>{moment(event.title).format("dddd, MMMM Do YYYY")}</span>
           </SectionTitle>
           <List>
             <ListItem key={event.occasion.name}>
-              <span>{event.occasion.name} </span>
+              <span>{event.occasion.name}</span>
               <p>
                 <StyledIcon icon={faMapMarkerAlt} />
-                <strong> {event.occasion.place.name}</strong>
+                <strong>{event.occasion.place.name}</strong>
               </p>
               <p>
                 <StyledIcon icon={faClock} />
@@ -86,10 +87,7 @@ function DateList() {
               </p>
             </ListItem>
           </List>
-          <AddToCalendar
-            google={event.calendar.google}
-            outlook={event.calendar.outlook}
-          />
+          <AddToCalendar google={event.calendar.google} />
         </Container>
       ))}
     </Fragment>

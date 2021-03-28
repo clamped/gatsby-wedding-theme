@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 import animationParams from "./animation-params";
 import media from "./media";
+import * as moment from "moment";
 
 const Heart = styled.svg`
   display: block;
@@ -81,12 +82,17 @@ function CoverText() {
       </Heading>
       <Text as="p">Join us on</Text>
       <ImpText as="p" {...animationParams} data-sal-delay="100">
-        {event.events[0].title}
+        {moment(event.events[0].title).format("dddd, MMMM Do YYYY")}
       </ImpText>
       <Text as="p">at</Text>
       <ImpText as="p" {...animationParams}>
         {event.events[0].occasion.place.name}
       </ImpText>
+      <Text as="p">and to celebrate at</Text>
+      <ImpText as="p" {...animationParams}>
+        {event.events[1].occasion.place.name}
+      </ImpText>
+      <Text as="p">Further details on how to RSVP below...</Text>
     </Fragment>
   );
 }

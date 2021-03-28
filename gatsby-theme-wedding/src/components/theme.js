@@ -1,6 +1,6 @@
 const theme = Object.freeze({
   fonts: {
-    main: "'Montserrat', sans-serif",
+    main: "'Helvetica', sans-serif",
     heading: "'Great Vibes', cursive"
   },
   colors: {

@@ -2,21 +2,18 @@
   "profiles": [
     {
       "name": "Samantha",
-      "description": "I live my whole life setting up situations that will eventually lead to the phrase, “And then laughter and hilarity ensued…” Hoping this one will work out too.",
-      "links": {
-        "instagram": "https://instagram.com/samantha/",
-        "facebook": "https://www.facebook.com/samantha"
-      }
+      "description": "I live my whole life setting up situations that will eventually lead to the phrase, “And then laughter and hilarity ensued…” Hoping this one will work out too."
     },
     {
       "name": "Nathaniel",
-      "description": "According to my 9th grade report card I’m a “hard working conscientious student” who is also “easily distracted in class”. What can I say? I do my homework but I also tend to daydream. Pretty much sums up who I still am today.",
-      "links": {
-        "instagram": "https://instagram.com/nathaniel",
-        "facebook": "https://www.facebook.com/nathaniel"
-      }
+      "description": "According to my 9th grade report card I’m a “hard working conscientious student” who is also “easily distracted in class”. What can I say? I do my homework but I also tend to daydream. Pretty much sums up who I still am today."
     }
   ],
+  "links": {
+    "rsvp": "https://forms.google.com/testform",
+    "giftList": "https://some-gift-list"
+  },
+  "contact": "mycontact@gmail.com",
   "events": [
     {
       "title": "26-December-2020",

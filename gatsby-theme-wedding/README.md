@@ -7,15 +7,15 @@ A simple and easy wedding theme using Gatsby and Styled Components.
 <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square">
 </a>
 
-[Demo](https://vigorous-ptolemy-fe8a70.netlify.com/event)
+Props to @agney who this is forked from.
 
 ## Manual Setup
 
 ```bash
-npm i @agney/gatsby-theme-wedding
+npm i @clamped90/gatsby-theme-wedding
 
 # OR #
-yarn add @agney/gatsby-theme-wedding
+yarn add @clamped90/gatsby-theme-wedding
 ```
 
 In your `gatsby-config.js`:
@@ -24,7 +24,7 @@ In your `gatsby-config.js`:
 module.exports = {
   plugins: [
     {
-      resolve: `@agney/gatsby-theme-wedding`,
+      resolve: `@clamped90/gatsby-theme-wedding`,
       options: {
         contentPath: "occasion", // Tell the theme where your data is.
         basePath: "/event" // Tell the theme which URL to render the theme at.

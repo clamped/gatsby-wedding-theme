@@ -27,16 +27,6 @@ function AddToCalendar({ google, outlook }) {
       <Link target="_blank" rel="noopener noreferrer" href={google}>
         Google
       </Link>
-      <Link
-        target="_blank"
-        rel="noopener noreferrer"
-        href={outlook}
-        css={`
-          margin-left: 0;
-        `}
-      >
-        Outlook
-      </Link>
     </Container>
   );
 }

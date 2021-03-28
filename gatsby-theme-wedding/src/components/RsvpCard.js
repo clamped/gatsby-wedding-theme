@@ -3,6 +3,8 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import media from "./media";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const Container = styled.article`
   margin: 2rem;
   width: 30%;
@@ -13,30 +15,26 @@ const Container = styled.article`
   `}
 `;
 
-const Image = styled.img`
-  object-fit: cover;
-  border-radius: 50%;
-  width: 15rem;
-  height: 15rem;
-  margin: 0 auto;
-  display: block;
-  box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.1);
-`;
-
 const Name = styled.h3`
   font-family: ${props => props.theme.fonts.main};
 `;
 
-function ProfileCard({ image, name, description, links }) {
+function RsvpCard({ name, description, icon, link }) {
   return (
     <Container>
-      <Image src={image} alt="" />
       <div
         css={`
           text-align: center;
         `}
       >
-        <Name>{name}</Name>
+        <Name>
+          <a href={link}>
+            <span>{name}</span>
+          </a>
+          <span> </span>
+          <FontAwesomeIcon icon={icon} />
+        </Name>
+
         <p>{description}</p>
       </div>
       <div
@@ -49,13 +47,11 @@ function ProfileCard({ image, name, description, links }) {
   );
 }
 
-ProfileCard.propTypes = {
+RsvpCard.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  links: PropTypes.shape({
-    instagram: PropTypes.string,
-    facebook: PropTypes.string
-  }).isRequired
+  link: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired
 };
 
-export default ProfileCard;
+export default RsvpCard;

@@ -1,10 +1,10 @@
 module.exports = {
   plugins: [
     {
-      resolve: `@agney/gatsby-theme-wedding`,
+      resolve: `@clamped90/gatsby-theme-wedding`,
       options: {
         contentPath: "occasion",
-        basePath: "/event"
+        basePath: "/"
       }
     }
   ]

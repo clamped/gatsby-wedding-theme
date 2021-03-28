@@ -17,6 +17,11 @@
       }
     }
   ],
+  "links": {
+    "rsvp": "https://forms.google.com/testform",
+    "giftList": "https://some-gift-list"
+  },
+  "contact": "mycontact@gmail.com",
   "events": [
     {
       "title": "26-December-2020",
