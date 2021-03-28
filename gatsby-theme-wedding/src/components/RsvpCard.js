@@ -28,7 +28,7 @@ function RsvpCard({ name, description, icon, link }) {
         `}
       >
         <Name>
-          <a href={link}>
+          <a href={link} target="_blank" rel="noopener noreferrer">
             <span>{name}</span>
           </a>
           <span> </span>
