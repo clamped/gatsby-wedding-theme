@@ -21,7 +21,7 @@ const ContactContainer = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 6rem 2rem;
+  padding: 0rem 6rem;
   font-family: ${props => props.theme.fonts.main};
 `;
 
