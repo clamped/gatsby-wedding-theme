@@ -17,11 +17,11 @@ const TitleContainer = styled.header`
   flex-direction: column;
 `;
 
-const ContactContainer = styled.h4`
+const ContactContainer = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-around;
+  padding: 6rem 2rem;
   font-family: ${props => props.theme.fonts.main};
 `;
 
@@ -73,7 +73,7 @@ function Rsvp() {
       <ContactContainer>
         <p>
           Unfortunately given the situation with Covid-19, we are still unsure
-          whether the day is likely to go ahead as planned.We are unlikely to
+          whether the day is likely to go ahead as planned. We are unlikely to
           know until much closer to the time and there's the possibility that
           guidance may change at late notice.
         </p>
