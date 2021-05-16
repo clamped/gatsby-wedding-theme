@@ -17,10 +17,11 @@ const TitleContainer = styled.header`
   flex-direction: column;
 `;
 
-const ContactContainer = styled.h2`
+const ContactContainer = styled.p`
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: space-around;
   font-family: ${props => props.theme.fonts.main};
 `;
 
