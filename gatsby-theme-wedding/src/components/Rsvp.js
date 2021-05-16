@@ -17,7 +17,7 @@ const TitleContainer = styled.header`
   flex-direction: column;
 `;
 
-const ContactContainer = styled.p`
+const ContactContainer = styled.h4`
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -73,15 +73,20 @@ function Rsvp() {
       <ContactContainer>
         <p>
           Unfortunately given the situation with Covid-19, we are still unsure
-          whether the day is likely to go ahead as planned. We are unlikely to
+          whether the day is likely to go ahead as planned.We are unlikely to
           know until much closer to the time and there's the possibility that
-          guidance may change at late notice. For now, if you've received a
-          message from us, please use the RSVP form linked below - even if you
-          returned the RSVP for the original date. This will help us to
-          understand everyone who is able to attend on September 11th. We hope
-          that the day can go ahead as planned and sincerely hope that all of
-          you are able to join us. If restrictions change between now and the
-          date, we will be in touch.
+          guidance may change at late notice.
+        </p>
+        <p>
+          For now, if you've received a message from us, please use the RSVP
+          form linked below - even if you returned the RSVP for the original
+          date. This will help us to understand everyone who is able to attend
+          on September 11th.
+        </p>
+        <p>
+          We hope that the day can go ahead as planned and sincerely hope that
+          all of you are able to join us. If restrictions change between now and
+          the date, we will be in touch.
         </p>
         <a href={contact}>Contact us!</a>
       </ContactContainer>
