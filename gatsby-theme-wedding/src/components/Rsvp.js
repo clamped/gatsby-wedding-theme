@@ -70,7 +70,18 @@ function Rsvp() {
       </TitleContainer>
 
       <ContactContainer>
-        <span>If you have any questions...</span>
+        <p>
+          Unfortunately given the situation with Covid-19, we are still unsure
+          whether the day is likely to go ahead as planned. We are unlikely to
+          know until much closer to the time and there's the possibility that
+          guidance may change at late notice. For now, if you've received a
+          message from us, please use the RSVP form linked below - even if you
+          returned the RSVP for the original date. This will help us to
+          understand everyone who is able to attend on September 11th. We hope
+          that the day can go ahead as planned and sincerely hope that all of
+          you are able to join us. If restrictions change between now and the
+          date, we will be in touch.
+        </p>
         <a href={contact}>Contact us!</a>
       </ContactContainer>
 
@@ -79,8 +90,7 @@ function Rsvp() {
           name={"Rsvp"}
           link={links.rsvp}
           icon={faEnvelope}
-          description={`If we've been in touch and you still need to RSVP,
-                        you can do so via the Google Form linked here.
+          description={`Please RSVP using the Form linked here.
                         If you RSVP'd last year, please fill in the form again or get in touch
                         to let us know you can still make it!`}
         />
