@@ -18,10 +18,8 @@ const TitleContainer = styled.header`
 `;
 
 const ContactContainer = styled.section`
-  display: flex;
   align-items: center;
-  flex-direction: column;
-  padding: 0rem 6rem;
+  padding: 0.25em 1.5em;
   font-family: ${props => props.theme.fonts.main};
 `;
 
@@ -88,7 +86,6 @@ function Rsvp() {
           all of you are able to join us. If restrictions change between now and
           the date, we will be in touch.
         </p>
-        <a href={contact}>Contact us!</a>
       </ContactContainer>
 
       <CardContainer>
@@ -108,6 +105,13 @@ function Rsvp() {
                         our gift list at Prezola. If you feel more comfortable gifting in another way, please send us a message.`}
         />
       </CardContainer>
+
+      <ContactContainer>
+        <p>
+          If you need to contact us, you can by emailing us{" "}
+          <a href={contact}>here</a>
+        </p>
+      </ContactContainer>
     </Container>
   );
 }
